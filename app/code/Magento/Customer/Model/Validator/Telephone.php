@@ -23,7 +23,7 @@ class Telephone extends AbstractValidator
      * \-: Matches the hyphen.
      * \d: Digits (0-9).
      */
-    private const PATTERN_TELEPHONE = '/(?:[\d\s\+\-\()]{1,20})/u';
+    private const PATTERN_TELEPHONE = '/^[\d\s\+\-\(\)]{1,20}$/u';
     
     /**
      * Validate telephone fields.
@@ -50,10 +50,8 @@ class Telephone extends AbstractValidator
      */
     private function isValidTelephone($telephoneValue)
     {
-        if ($telephoneValue != null) {
-            if (preg_match(self::PATTERN_TELEPHONE, (string) $telephoneValue, $matches)) {
-                return $matches[0] == $telephoneValue;
-            }
+        if ($telephoneValue !== null) {
+            return preg_match(self::PATTERN_TELEPHONE, (string) $telephoneValue) === 1;
         }
 
         return true;
