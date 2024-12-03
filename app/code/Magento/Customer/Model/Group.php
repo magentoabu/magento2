@@ -172,7 +172,7 @@ class Group extends \Magento\Framework\Model\AbstractModel
      */
     protected function _prepareData()
     {
-        $this->setCode(substr($this->getCode(), 0, self::GROUP_CODE_MAX_LENGTH));
+        $this->setCode(preg_match('/^.{1,' . self::GROUP_CODE_MAX_LENGTH . '}/us', $this->getCode(), $matches) ? $matches[0] : '');
         return $this;
     }
 }
