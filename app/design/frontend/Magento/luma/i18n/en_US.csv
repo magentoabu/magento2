@@ -154,7 +154,7 @@
 "Forgot your account password? Click <a href=""%reset_url"">here</a> to reset it.","Forgot your account password? Click <a href=""%reset_url"">here</a> to reset it."
 "Helper arguments should not be used in custom layout updates.","Helper arguments should not be used in custom layout updates."
 "Home Page","Home Page"
-"Hours of Operation:<br /><span class=""no-link"">%store_hours</span>.","Hours of Operation:<br /><span class=""no-link"">%store_hours</span>."
+"Hours of Operation:<br/><span class=""no-link"">%store_hours</span>.","Hours of Operation:<br /><span class=""no-link"">%store_hours</span>."
 "HTML attribute ""style"" contains restricted styles","HTML attribute ""style"" contains restricted styles"
 "HTML ID or class will not have effect, if HTML tag is not specified.","HTML ID or class will not have effect, if HTML tag is not specified."
 "Html tag ""%1"" is forbidden for usage in containers. Consider to use one of the allowed: %2.","Html tag ""%1"" is forbidden for usage in containers. Consider to use one of the allowed: %2."
